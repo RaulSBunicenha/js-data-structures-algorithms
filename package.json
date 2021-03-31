@@ -1,0 +1,12 @@
+{
+  "name": "js-data-structures-algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "stacks": "nodemon stacks/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
