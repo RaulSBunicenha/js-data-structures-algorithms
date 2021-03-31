@@ -21,5 +21,7 @@ console.log(isPalindrome ? `${word} is a palindrome` : `${word} is not a palindr
     let stack = []
     stack.push('first Item')
     stack.push('second Item')
-    console.log(`The peek return item is:`, stack.peek())
+    console.log(`The last item is:`, stack.peek())
+    console.log(`Lets pop it:`, stack.pop())
+    console.log(`Now the last item is:`, stack.peek())
 }
