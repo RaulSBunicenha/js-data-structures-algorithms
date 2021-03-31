@@ -27,7 +27,9 @@ class PalindromeWord {
     }
 
     setReverseWord () {
-        for (let i = 0; i < this.#word.length; i++) this.#reverseWord += this.#letters.pop()
+        do {
+            this.#reverseWord += this.#letters.pop()
+        } while (this.#letters.length > 0)
     }
 
     check () {
@@ -40,6 +42,6 @@ class PalindromeWord {
     }
 }
 
-const isPalindrome = new PalindromeWord('ana').build()
+const isPalindrome = new PalindromeWord('racecar').build()
 
 console.log(isPalindrome)
