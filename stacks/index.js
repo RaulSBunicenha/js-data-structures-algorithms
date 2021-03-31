@@ -30,9 +30,13 @@ class PalindromeWord {
         for (let i = 0; i < this.#word.length; i++) this.#reverseWord += this.#letters.pop()
     }
 
+    check () {
+        return this.#reverseWord == this.#word
+    }
+
     build () {
         if(!this.isValid()) return false
-        return this.#reverseWord == this.#word
+        return this.check()
     }
 }
 
