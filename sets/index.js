@@ -27,3 +27,12 @@ import MySet from './MySet.js';
     console.log('set2 difference set1', set2.difference(set1).values)
     console.log('set1 subset set2', set1.subset(set2))
 }
+
+{
+    const set1 = new Set()
+
+    console.log(set1.add('a'))
+    console.log(set1.add('b'))
+
+    console.log(set1.values())
+}
