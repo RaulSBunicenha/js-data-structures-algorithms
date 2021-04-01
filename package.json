@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "stacks": "nodemon stacks/"
+    "stacks": "nodemon stacks/",
+    "sets": "nodemon sets/"
   },
   "type": "module",
   "keywords": [],
