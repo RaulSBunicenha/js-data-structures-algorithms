@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "stacks": "nodemon stacks/",
-    "sets": "nodemon sets/"
+    "sets": "nodemon sets/",
+    "queue": "nodemon queue/"
   },
   "type": "module",
   "keywords": [],
