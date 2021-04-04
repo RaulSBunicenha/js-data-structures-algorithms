@@ -6,7 +6,8 @@
   "scripts": {
     "stacks": "nodemon stacks/",
     "sets": "nodemon sets/",
-    "queue": "nodemon queue/"
+    "queue": "nodemon queue/",
+    "binary-search-tree": "nodemon binarySearchTree/"
   },
   "type": "module",
   "keywords": [],
