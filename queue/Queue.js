@@ -1,28 +1,28 @@
 export default class Queue {
-    #collection = []
+    _collection = []
 
     print () {
-        console.log(this.#collection)
+        console.log(this._collection)
     }
 
     enqueue (element) {
-        this.#collection.push(element)
+        this._collection.push(element)
     }
 
     dequeue () {
-        return this.#collection.shift()
+        return this._collection.shift()
     }
 
     get front () {
-        return this.#collection[0]
+        return this._collection[0]
     }
 
     get size () {
-        return this.#collection.length
+        return this._collection.length
     }
 
     get isEmpty () {
-        return this.#collection.length === 0
+        return this._collection.length === 0
     }
 
 }
