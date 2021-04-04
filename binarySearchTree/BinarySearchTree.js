@@ -57,11 +57,31 @@ export default class BinarySearchTree {
     }
 
     remove (data) {
-        if (this.#root.data === data) {
-            this.#root = undefined
-            return;
+        if (!this.isPresent(data)) return;
+
+        function removeNode (node, data) {
+            if (node.data === data) {
+                if (!node.left && !node.right) return;
+                if (!node.left) return node.right
+                if (!node.right) return node.left
+
+                let tempNode = node.right
+                while (tempNode.left) tempNode = tempNode.left
+
+                node.data = tempNode.data
+                node.right = removeNode(node.right, tempNode.data)
+                return node
+            }
+
+            if (data < node.data) {
+                node.left = removeNode(node.left, data)
+                return node
+            }
+
+            node.right = removeNode(node.right, data)
+            return node
         }
 
-        this.#root.removeChild(data)
+        this.#root = removeNode(this.#root, data)
     }
 }

@@ -12,6 +12,7 @@ import BinarySearchTree from './BinarySearchTree.js'
     binarySearchTree.add(72)
     binarySearchTree.add(12)
     binarySearchTree.add(23)
+    binarySearchTree.add(24)
     binarySearchTree.add(54)
     binarySearchTree.add(76)
     binarySearchTree.add(67)
@@ -42,18 +43,18 @@ import BinarySearchTree from './BinarySearchTree.js'
     binarySearchTree.remove(80)
     console.log(binarySearchTree.values)
 
-    console.log('Remove 67 ------------------')
+    console.log('Remove 76 ------------------')
     console.log(binarySearchTree.values)
-    binarySearchTree.remove(67)
+    binarySearchTree.remove(76)
+    console.log(binarySearchTree.values)
+
+    console.log('Remove 72 ------------------')
+    console.log(binarySearchTree.values)
+    binarySearchTree.remove(72)
     console.log(binarySearchTree.values)
 
     console.log('Remove 17 ------------------')
     console.log(binarySearchTree.values)
     binarySearchTree.remove(17)
-    console.log(binarySearchTree.values)
-
-    console.log('Remove 50 ------------------')
-    console.log(binarySearchTree.values)
-    binarySearchTree.remove(50)
     console.log(binarySearchTree.values)
 }
