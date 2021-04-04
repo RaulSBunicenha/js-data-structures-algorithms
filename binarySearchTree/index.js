@@ -57,4 +57,9 @@ import BinarySearchTree from './BinarySearchTree.js'
     console.log(binarySearchTree.values)
     binarySearchTree.remove(17)
     console.log(binarySearchTree.values)
+
+    console.log('Remove 50 ------------------')
+    console.log(binarySearchTree.values)
+    binarySearchTree.remove(50)
+    console.log(binarySearchTree.values)
 }
